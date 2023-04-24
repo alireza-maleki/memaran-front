@@ -1,0 +1,32 @@
+@import "../../../variables";
+
+.bottom-header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #f2f4ff;
+  height: 62px;
+  width: 100%;
+  z-index: 999;
+
+  p {
+    font-size: 9px;
+    font-weight: bolder;
+  }
+
+  .home {
+    color: $primary;
+  }
+
+  .plus {
+    position: absolute;
+    background: $primary;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    top: -20px;
+    cursor: pointer;
+  }
+}

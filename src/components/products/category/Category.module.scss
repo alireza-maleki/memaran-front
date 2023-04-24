@@ -1,0 +1,24 @@
+@import "../../../../variables";
+
+.arrow-box {
+  cursor: pointer;
+}
+
+.up-arrow {
+  color: $primary;
+}
+
+.down-arrow {
+  color: $primary;
+}
+
+
+@media (max-width: 576px) {
+  .arrow-box {
+    display: flex;
+
+    span {
+      font-size: 12px;
+    }
+}
+}

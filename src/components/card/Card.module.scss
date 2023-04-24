@@ -1,0 +1,43 @@
+@import "../../../variables";
+
+.bag-icon {
+  background-color: $primary;
+  width: 43px;
+  height: 43px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 39px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  margin: 0;
+
+  span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $secondary;
+    top: -8px;
+    left: -8px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .bag-icon {
+    background-color: transparent;
+
+    span {
+      top: 5px;
+      left: 1px;
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+    }
+  }
+}

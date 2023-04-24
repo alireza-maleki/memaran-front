@@ -1,0 +1,27 @@
+.bottom-header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #f2f4ff;
+  height: 62px;
+  width: 100%;
+  z-index: 999;
+}
+.bottom-header p {
+  font-size: 9px;
+  font-weight: bolder;
+}
+.bottom-header .home {
+  color: #6F11E1;
+}
+.bottom-header .plus {
+  position: absolute;
+  background: #6F11E1;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 38px;
+  top: -20px;
+  cursor: pointer;
+}/*# sourceMappingURL=BottomHeader.module.css.map */

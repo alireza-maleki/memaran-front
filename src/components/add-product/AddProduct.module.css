@@ -1,0 +1,147 @@
+.head {
+  width: 540px;
+  margin: 0 auto;
+}
+.head p {
+  font-size: 12px;
+  color: #737373;
+  padding: 0 0.5rem;
+}
+
+.cart {
+  width: 540px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin: 1rem auto;
+}
+
+.title {
+  background-color: #e4e4e4;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 1rem 0;
+  line-height: normal;
+  vertical-align: baseline;
+  width: 100%;
+}
+.title p {
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bolder;
+  width: 66%;
+}
+
+.inputs-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.input-control {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.input-control label {
+  position: absolute;
+  top: 6px;
+  left: 90px;
+  background-color: #f9f9f9;
+  padding: 0 1rem 0 0.1rem;
+  font-size: 14px;
+}
+.input-control textarea {
+  padding: 0.5rem 1.5rem;
+  width: 70%;
+  border: 0.1rem solid #b7b7b7;
+  border-radius: 5px;
+  outline: none;
+  margin: 1rem 0;
+  background-color: #f9f9f9;
+}
+.input-control input {
+  padding: 0.5rem 1.5rem;
+  width: 70%;
+  border: 0.1rem solid #b7b7b7;
+  border-radius: 5px;
+  outline: none;
+  margin: 1rem 0;
+  background-color: #f9f9f9;
+}
+.input-control ::-moz-placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+.input-control ::placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+.input-control :-ms-input-placeholder {
+  color: #aaa;
+}
+.input-control ::-ms-input-placeholder {
+  color: #aaa;
+}
+
+.actions {
+  padding: 2rem 0;
+}
+.actions button {
+  padding: 0.5rem 3.3rem;
+  border-radius: 5px;
+  margin: 0 0.5rem;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.actions .cancel {
+  border: 0.1rem solid #FD6644;
+  color: #FD6644;
+  background-color: #f9f9f9;
+}
+.actions .checkout {
+  background-color: #FD6644;
+  color: #fff;
+}
+.actions .disabledBtnStyle {
+  background-color: #fb9e8a;
+}
+
+@media (max-width: 992px) {
+  .head {
+    width: 320px;
+    margin: 0 auto;
+  }
+  .head p {
+    font-size: 10px;
+    color: #737373;
+    padding: 0 0.5rem;
+  }
+  .cart {
+    width: 320px;
+  }
+  .input-control label {
+    left: 20px;
+  }
+  .input-control textarea {
+    width: 90%;
+  }
+  .input-control input {
+    width: 90%;
+  }
+  .actions {
+    padding: 2rem 0;
+  }
+  .actions button {
+    padding: 0.5rem 1.6rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=AddProduct.module.css.map */

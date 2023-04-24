@@ -1,0 +1,20 @@
+.arrow-box {
+  cursor: pointer;
+}
+
+.up-arrow {
+  color: #6F11E1;
+}
+
+.down-arrow {
+  color: #6F11E1;
+}
+
+@media (max-width: 576px) {
+  .arrow-box {
+    display: flex;
+  }
+  .arrow-box span {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=Category.module.css.map */

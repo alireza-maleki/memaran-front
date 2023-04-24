@@ -1,0 +1,81 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 45%;
+  min-height: 300px;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 5rem;
+  padding-top: 2rem;
+  width: 100%;
+  background-color: #fff;
+}
+.header span {
+  font-weight: bolder;
+  color: #000;
+  font-size: 20px;
+}
+
+.text p {
+  font-size: 14px;
+  padding: 0 2rem 0 0;
+}
+
+@media (max-width: 992px) {
+  .popup {
+    width: 80%;
+    min-height: 540px;
+  }
+  .header span {
+    font-weight: bolder;
+    color: #000;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .popup {
+    width: 90%;
+    min-height: 540px;
+  }
+  .header span {
+    font-weight: bolder;
+    color: #000;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+@media (max-width: 568px) {
+  .popup {
+    width: 90%;
+    min-height: 540px;
+  }
+  .header span {
+    font-weight: bolder;
+    color: #000;
+    font-size: 12px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=AddProductPopup.module.css.map */

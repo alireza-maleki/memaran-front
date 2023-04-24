@@ -1,0 +1,32 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 992px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .swiper-box {
+    height: 100vh;
+    direction: rtl;
+  }
+
+  .swiper-slide {
+    direction: ltr;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-box {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper-box {
+    height: 100vh;
+  }
+}

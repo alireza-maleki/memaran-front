@@ -1,0 +1,241 @@
+@import "../../../variables";
+
+.head {
+  width: 540px;
+  margin: 0 auto;
+}
+
+.cart {
+  width: 540px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin: 1rem auto;
+}
+
+.title {
+  background-color: #e4e4e4;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 1rem 0;
+  line-height: normal;
+  vertical-align: baseline;
+  width: 100%;
+
+  p {
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bolder;
+    width: 66%;
+  }
+}
+
+.inputs-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.input-control {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+
+  label {
+    position: absolute;
+    top: 6px;
+    left: 90px;
+    background-color: #f9f9f9;
+    padding: 0 1rem 0 0.1rem;
+    font-size: 14px;
+  }
+
+  input {
+    padding: 0.5rem 1.5rem;
+    width: 70%;
+    border: 0.1rem solid #b7b7b7;
+    border-radius: 5px;
+    outline: none;
+    margin: 1rem 0;
+    background-color: #f9f9f9;
+  }
+
+  ::placeholder {
+    color: #aaa;
+    opacity: 1;
+  }
+
+  :-ms-input-placeholder {
+    color: #aaa;
+  }
+
+  ::-ms-input-placeholder {
+    color: #aaa;
+  }
+}
+
+.two-input {
+  //   width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    width: 40%;
+    // background-color: red;
+    position: relative;
+
+    label {
+      position: absolute;
+      top: 6px;
+      left: 15px;
+      background-color: #f9f9f9;
+      padding: 0 1rem 0 0.1rem;
+      font-size: 14px;
+    }
+
+    input {
+      width: 98%;
+      padding: 0.5rem 1rem;
+      border: 0.1rem solid #b7b7b7;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      outline: none;
+      margin: 1rem 0.3rem;
+    }
+  }
+}
+
+// === Form Button ===
+.actions {
+  padding: 2rem 0;
+
+  button {
+    padding: 0.5rem 3.3rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .cancel {
+    border: 0.1rem solid $secondary;
+    color: $secondary;
+    background-color: #f9f9f9;
+  }
+
+  .checkout {
+    background-color: $secondary;
+    color: #fff;
+  }
+
+  .disabledBtnStyle {
+    background-color: #fdb3a2;
+    cursor: none;
+  }
+}
+
+// === Media Queries ===
+@media (max-width: 991px) {
+  .cart {
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .head {
+    width: 440px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cart {
+    width: 440px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 1rem auto;
+    margin-bottom: 10rem;
+  }
+
+  .input-control {
+    label {
+      left: 15px;
+    }
+
+    input {
+      width: 96%;
+    }
+  }
+
+  .two-input {
+    div {
+      width: 49.5%;
+
+      label {
+        left: 15px;
+      }
+
+      input {
+        width: 96%;
+      }
+    }
+  }
+
+  .actions {
+    button {
+      padding: 0.5rem 1.7rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .head {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cart {
+    width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 1rem auto;
+    margin-bottom: 10rem;
+  }
+
+  .input-control {
+    label {
+      left: 15px;
+    }
+
+    input {
+      width: 96%;
+    }
+  }
+
+  .two-input {
+    div {
+      width: 49.5%;
+
+      label {
+        left: 15px;
+      }
+
+      input {
+        width: 96%;
+      }
+    }
+  }
+
+  .actions {
+    button {
+      padding: 0.5rem 1.7rem;
+    }
+  }
+}

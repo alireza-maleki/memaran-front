@@ -1,0 +1,150 @@
+@import "../../../../variables";
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  z-index: 10;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 35%;
+  min-height: 300px;
+  background-color: #e8ffe4;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 5rem;
+  padding-top: 2rem;
+  width: 100%;
+  background-color: #e8ffe4;
+
+  span {
+    font-weight: bolder;
+    color: #1bac03;
+    font-size: 20px;
+  }
+}
+
+.text {
+  p {
+    font-size: 14px;
+    padding: 0 2rem 0 0;
+  }
+}
+
+.add-product {
+  color: #fff;
+  cursor: pointer;
+
+  img {
+    color: #fff;
+    background-color: $primary;
+    margin-right: 10px;
+  }
+
+  a {
+    width: 165px;
+    height: 43px;
+    background-color: $primary;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+//  === Media Quereies ===
+@media (max-width: 992px) {
+  .popup {
+    width: 50%;
+    height: 400px;
+  }
+
+  .header {
+    width: 100%;
+
+    span {
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+
+  .complete-btn {
+    button {
+      border: none;
+      background: #1bac03;
+      border-radius: 5px;
+      padding: 0.5rem 1.5rem;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .popup {
+    width: 60%;
+    height: 400px;
+  }
+
+  .header {
+    width: 100%;
+
+    span {
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+
+  .complete-btn {
+    button {
+      border: none;
+      background: #1bac03;
+      border-radius: 5px;
+      padding: 0.5rem 1.5rem;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .popup {
+    width: 80%;
+    height: 430px;
+  }
+
+  .header {
+    width: 100%;
+
+    span {
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+
+  .complete-btn {
+    button {
+      border: none;
+      background: #1bac03;
+      border-radius: 5px;
+      padding: 0.5rem 1.5rem;
+      color: #fff;
+    }
+  }
+}
